@@ -10,17 +10,18 @@ public class GameMinDTO {
 	private String imgUrl;	
 	private String shortDescription;	
 	
+	
 	public GameMinDTO() {
 		
 	}
 
 	public GameMinDTO(Game entity) {
-		super();
 		id = entity.getId();
 		title = entity.getTitle();
 		year = entity.getYear();
 		imgUrl = entity.getImgUrl();
 		shortDescription = entity.getShortDescription();
+		
 	}
 
 	public Long getId() {
@@ -42,6 +43,7 @@ public class GameMinDTO {
 	public String getShortDescription() {
 		return shortDescription;
 	}
+	
 	
 
 }
